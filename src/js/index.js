@@ -3,6 +3,9 @@ const photo = document.querySelector("input[name='photo']");
 const gPhoto = document.querySelector("input[name='g_photo']");
 const profilePreview = document.querySelector("#profile-image-preview");
 const galleryImagePreview = document.querySelector("#gallery-image-preview");
+const alertBox = document.querySelector(".alert-box");
+const closeButton = document.querySelector(".close-button");
+
 let formDataObject;
 let photoUrl;
 let gallPhotoUrl = [];
@@ -11,6 +14,16 @@ registrationForm.onsubmit = (e) => {
   e.preventDefault();
   const formData = new FormData(e.target);
   formDataObject = Object.fromEntries(formData.entries());
+  const { name, email, cell, gender, photo, gPhoto, classs } = formDataObject;
+
+  // //form validation
+  if (!name || !email || !cell || !gender || !photo) {
+    alertBox.innerHTML = getAlert("All fields are required", "danger");
+  } else if (!emailValidation(email)) {
+    alertBox.innerHTML = getAlert("Invalid Email Address", "warning");
+  } else {
+    alertBox.innerHTML = getAlert("Registration Successful", "success");
+  }
 };
 
 //profile photo url

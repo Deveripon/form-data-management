@@ -1,8 +1,59 @@
 @media all and (max-width: 668px) {
+
   input#name,
   input#email,
   input#cell {
     max-width: 100%;
     box-sizing: border-box;
+  }
+}
+
+
+
+#alertmasage:after {
+  font-family: "Font Awesome 5 Free";
+  content: "\f057";
+  cursor: pointer;
+  display: block !important;
+}
+
+.profile-preview {
+  position: relative;
+}
+
+.profile-preview:hover .close-button {
+  display: block;
+}
+
+.close-button {
+  position: absolute;
+  top: 03px;
+  left: 03px;
+  color: #ccc;
+  font-size: 20px;
+  transition: .2s;
+  display: none;
+
+}
+
+.close-button:hover {
+  color: red;
+}
+
+
+input[name="name"],
+input[name="cell"],
+input[name="email"] {
+  width: 380px;
+  padding: 8px !important;
+}
+
+.alert-box {
+  max-width: 380px;
+}
+
+@media all and (min-width:0px) and (max-width:668px) {
+  .alert-box {
+    width: 100%;
   }
 }

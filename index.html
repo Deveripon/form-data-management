@@ -1,130 +1,110 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Tailwind Starter Kit</title>
-    <!-- Link tailwind css output file -->
-    <link rel="stylesheet" href="./dist/tailwindstyle.css" />
-    <link rel="stylesheet" href="./dist/custom.css" />
-  </head>
 
-  <body class="h-screen bg-white pt-8">
-    <!-- form-left-section -->
-    <section class="reg-form-sec flex justify-between p-8">
-      <div class="section-left-side md:w-1/2 hidden md:block">
-        <img src="./dist/images/11668479_20943593.jpg" class="" />
-      </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tailwind Starter Kit</title>
+  <!-- Link tailwind css output file -->
+  <link rel="stylesheet" href="./dist/tailwindstyle.css" />
+  <link rel="stylesheet" href="./dist/custom.css" />
+  <script src="https://kit.fontawesome.com/2ab099f38c.js" crossorigin="anonymous"></script>
+  <!-- UIkit CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.16.22/dist/css/uikit.min.css" />
 
-      <!-- form right section -->
-      <div class="section-right-side w-full md:w-1/2 m-auto">
-        <div class="form border rounded-md sm:border-none m-auto block p-10">
-          <h3 class="text-teal-700 font-bold text-2xl lg:text-4xl">
-            Taraganj Pilot High School
-          </h3>
-          <h4 class="py-5 text-blue-950 font-semibold text-xl xl:text-2xl">
-            Register New Students
-          </h4>
-          <form
-            action=""
-            id="registration-form"
-            class="justify-center items-center"
-          >
-            <div class="form-group mb-3">
-              <label for="name">Name</label>
-              <input
-                type="text"
-                class="border px-2 border-cyan-600 border-spacing-1 focus:border-fuchsia-950 rounded py-1 block"
-                name="name"
-                id="name"
-              />
-            </div>
-            <div class="form-group mb-3">
-              <label for="name">Email</label>
-              <input
-                type="text"
-                class="border px-2 border-cyan-600 border-spacing-1 focus:border-fuchsia-950 rounded py-1 block"
-                name="email"
-                id="email"
-              />
-            </div>
 
-            <div class="form-group mb-3">
-              <label for="name">Cell Number</label>
-              <input
-                type="text"
-                class="border px-2 border-cyan-600 border-spacing-1 focus:border-cyan-900 rounded py-1 block"
-                name="cell"
-                id="cell"
-              />
-            </div>
-            <div class="form-group mb-3">
-              <label for="name">Gender</label>
-              <br />
-              <label for="male"
-                ><input type="radio" name="gender" id="male" value="male" />
-                Male</label
-              >
-              <label for="female"
-                ><input type="radio" name="gender" id="female" value="female" />
-                Male</label
-              >
-            </div>
-            <div class="form-group mb-3">
-              <label for="name">Class</label>
-              <br />
-              <select
-                name="class"
-                class="rounded-md p-2 block max-w-md text-sm text-slate-500 file:mr-4 file:py-2 file:px-4 file:rounded-full file:border-0 file:text-sm file:font-semibold file:bg-violet-50 file:text-violet-700 hover:file:bg-violet-100"
-                id=" class"
-              >
-                <option value="">select class</option>
-                <option value="6">class Six</option>
-                <option value="7">class Seven</option>
-                <option value="8">class Eight</option>
-                <option value="9">class Nine</option>
-                <option value="10">class Ten</option>
-              </select>
-            </div>
-            <div class="profile-preview mb-3">
-              <img
-                class="hidden w-2/6"
-                id="profile-image-preview"
-                src=""
-                alt="profile-preview"
-              />
-            </div>
-            <div class="form-group mb-3">
-              <span class="my-2">Choose profile photo</span>
-              <input
-                type="file"
-                name="photo"
-                class="block w-full text-sm text-slate-500 file:mr-4 file:py-2 file:px-4 file:rounded-full file:border-0 file:text-sm file:font-semibold file:bg-violet-50 file:text-violet-700 hover:file:bg-violet-100"
-              />
-            </div>
-            <div id="gallery-image-preview" class=""></div>
-            <div class="form-group mb-3">
-              <span class="my-2">Upload Gallery photo</span>
-              <input
-                type="file"
-                name="g_photo"
-                multiple
-                class="block w-full text-sm text-slate-500 file:mr-4 file:py-2 file:px-4 file:rounded-full file:border-0 file:text-sm file:font-semibold file:bg-violet-50 file:text-violet-700 hover:file:bg-violet-100"
-              />
-            </div>
+</head>
 
-            <button
-              type="submit"
-              class="rounded-full bg-teal-700 p-2 w-44 text-white transform hover:bg-teal-600 duration-150"
-            >
-              Add Now
-            </button>
-          </form>
+<body class="h-screen bg-white pt-8">
+  <!-- form-left-section -->
+  <section class="reg-form-sec flex justify-between p-8">
+    <div class="section-left-side md:w-1/2 hidden md:block">
+      <img src="./dist/images/11668479_20943593.jpg" class="" />
+    </div>
+
+    <!-- form right section -->
+    <div class="section-right-side w-full md:w-1/2 m-auto">
+      <div class="form border rounded-md sm:border-none m-auto block p-10">
+        <h3 class="text-teal-700 font-bold text-2xl xl:text-4xl">
+          Taraganj Pilot High School
+        </h3>
+        <h4 class="py-5 text-blue-950 font-semibold text-xl xl:text-2xl">
+          Register New Students
+        </h4>
+        <div class="alert-box w-64">
+
         </div>
-      </div>
-    </section>
+        <form action="" id="registration-form" class="justify-center items-center">
+          <div class="form-group mb-3">
+            <label for="name">Name</label>
+            <input type="text"
+              class="border px-2 border-cyan-600 border-spacing-1 focus:border-fuchsia-950 rounded py-1 block"
+              name="name" id="name" />
+          </div>
+          <div class="form-group mb-3">
+            <label for="name">Email</label>
+            <input type="text"
+              class="border px-2 border-cyan-600 border-spacing-1 focus:border-fuchsia-950 rounded py-1 block"
+              name="email" id="email" />
+          </div>
 
-    <script src="./src/js/functions.js"></script>
-    <script src="./src/js/index.js"></script>
-  </body>
+          <div class="form-group mb-3">
+            <label for="name">Cell Number</label>
+            <input type="text"
+              class="border px-2 border-cyan-600 border-spacing-1 focus:border-cyan-900 rounded py-1 block" name="cell"
+              id="cell" />
+          </div>
+          <div class="form-group mb-3">
+            <label for="name">Gender</label>
+            <br />
+            <label for="male"><input type="radio" name="gender" id="male" value="male" />
+              Male</label>
+            <label for="female"><input type="radio" name="gender" id="female" value="female" />
+              female</label>
+          </div>
+          <div class="form-group mb-3">
+            <label for="name">Class</label>
+            <br />
+            <select name="classs"
+              class="rounded-md p-2 block max-w-md text-sm text-slate-500 file:mr-4 file:py-2 file:px-4 file:rounded-full file:border-0 file:text-sm file:font-semibold file:bg-violet-50 file:text-violet-700 hover:file:bg-violet-100"
+              id=" class">
+              <option value="">select class</option>
+              <option value="6">class Six</option>
+              <option value="7">class Seven</option>
+              <option value="8">class Eight</option>
+              <option value="9">class Nine</option>
+              <option value="10">class Ten</option>
+            </select>
+          </div>
+          <div class="profile-preview mb-3">
+            <button class="close-button"><i class="fa-solid fa-circle-xmark"></i></button>
+            <img class="hidden w-2/6" id="profile-image-preview" src="" alt="" />
+          </div>
+          <div class=" form-group mb-3">
+            <span class="my-2">Choose profile photo</span>
+            <input type="file" name="photo"
+              class="block w-full text-sm text-slate-500 file:mr-4 file:py-2 file:px-4 file:rounded-full file:border-0 file:text-sm file:font-semibold file:bg-violet-50 file:text-violet-700 hover:file:bg-violet-100" />
+          </div>
+          <div id="gallery-image-preview" class=""></div>
+          <div class="form-group mb-3">
+            <span class="my-2">Upload Gallery photo</span>
+            <input type="file" name="g_photo" multiple
+              class="block w-full text-sm text-slate-500 file:mr-4 file:py-2 file:px-4 file:rounded-full file:border-0 file:text-sm file:font-semibold file:bg-violet-50 file:text-violet-700 hover:file:bg-violet-100" />
+          </div>
+
+          <button type="submit"
+            class="rounded-full bg-teal-700 p-2 w-44 text-white transform hover:bg-teal-600 duration-150">
+            Add Now
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+  <!-- UIkit JS -->
+  <script src="https://cdn.jsdelivr.net/npm/uikit@3.16.22/dist/js/uikit.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/uikit@3.16.22/dist/js/uikit-icons.min.js"></script>
+  <script src="./src/js/functions.js"></script>
+  <script src="./src/js/index.js"></script>
+</body>
+
 </html>
