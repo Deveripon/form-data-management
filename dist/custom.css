@@ -1,6 +1,8 @@
-@media all and (max-width:640px){
-  input[name:'name'],
-  input[name:'email'],
-  input[name:'cell']{
-    width: 70% !important}
-  
+@media all and (max-width: 668px) {
+  input#name,
+  input#email,
+  input#cell {
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+}
